@@ -1,0 +1,86 @@
+{
+  "name": "vscode-spotlight",
+  "version": "1.0.0",
+  "description": "A spotlight that help you focus on some lines",
+  "publisher": "Cyandev",
+  "displayName": "Spotlight",
+  "main": "./out/main.js",
+  "icon": "images/icon.png",
+  "homepage": "https://github.com/unixzii/vscode-spotlight/blob/master/README.md",
+  "categories": ["Other"],
+  "engines": {
+    "vscode": "^1.42.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/unixzii/vscode-spotlight"
+  },
+  "bugs": {
+    "url": "https://github.com/unixzii/vscode-spotlight/issues"
+  },
+  "keywords": [
+    "focus",
+    "immersive",
+    "highlight",
+    "vscode",
+    "text",
+    "theme"
+  ],
+  "activationEvents": [
+    "onCommand:spotlight.focusOnSelectedLines",
+    "onCommand:spotlight.showHighlightedRanges",
+    "onCommand:spotlight.clearRanges",
+    "onCommand:spotlight.changeDimOpacity"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "spotlight.focusOnSelectedLines",
+        "title": "Focus on the Selected Lines"
+      },
+      {
+        "command": "spotlight.showHighlightedRanges",
+        "title": "Show Highlighted Ranges"
+      },
+      {
+        "command": "spotlight.clearRanges",
+        "title": "Clear Ranges"
+      },
+      {
+        "command": "spotlight.changeDimOpacity",
+        "title": "Change Opacity of Dimmed Text"
+      }
+    ],
+    "configuration": [
+      {
+        "title": "Spotlight",
+        "properties": {
+          "spotlight.dimOpacity": {
+            "type": "number",
+            "default": 0.4,
+            "description": "The text opacity for dimmed ranges."
+          }
+        }
+      }
+    ]
+  },
+  "scripts": {
+    "watch": "tsc -watch -p ./",
+    "build": "tsc -p ./",
+    "test": "cross-env TS_NODE_FILES=true mocha -r ts-node/register test/**/*.ts",
+    "vscode:prepublish": "npm run build"
+  },
+  "author": "Cyandev <unixzii@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/chai": "^4.2.9",
+    "@types/mocha": "^7.0.1",
+    "@types/node": "^13.7.4",
+    "@types/vscode": "^1.42.0",
+    "chai": "^4.2.0",
+    "cross-env": "^7.0.0",
+    "mocha": "^6.2.0",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.8.2"
+  }
+}
