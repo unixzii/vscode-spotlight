@@ -1,6 +1,6 @@
 {
   "name": "vscode-spotlight",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A spotlight that help you focus on some lines",
   "publisher": "Cyandev",
   "displayName": "Spotlight",
@@ -36,19 +36,19 @@
     "commands": [
       {
         "command": "spotlight.focusOnSelectedLines",
-        "title": "Focus on the Selected Lines"
+        "title": "Spotlight: Focus on the Selected Lines"
       },
       {
         "command": "spotlight.showHighlightedRanges",
-        "title": "Show Highlighted Ranges"
+        "title": "Spotlight: Show Highlighted Ranges"
       },
       {
         "command": "spotlight.clearRanges",
-        "title": "Clear Ranges"
+        "title": "Spotlight: Clear Ranges"
       },
       {
         "command": "spotlight.changeDimOpacity",
-        "title": "Change Opacity of Dimmed Text"
+        "title": "Spotlight: Change Opacity of Dimmed Text"
       }
     ],
     "configuration": [
