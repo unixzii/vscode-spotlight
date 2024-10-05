@@ -14,6 +14,17 @@ This extension let you dim the lines outside the selections. It can help your pr
 * Show the list of highlighted ranges
 * Quick jump
 
+## Usage
+
+Open **Command Palette** and search for "Spotlight". There are the commands the extension provides:
+
+* Change Opacity of Dimmed Text
+* Clear Ranges
+* Focus on the Selected Lines
+* Show Highlighted Ranges
+
+To highlight some lines, select these lines and execute "Focus on the Selected Lines" command.
+
 ## Configurations
 
 ```javascript
